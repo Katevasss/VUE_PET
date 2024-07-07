@@ -8,7 +8,7 @@
       <button class="weather-form__btn" @click="fetchWeather(3)" :disabled="disabled">Прогноз на 3 дня</button>
     </div>
     <div v-if="loading">Загрузка ...</div>
-    <div v-if="!loading && weatherData.length && !disabled && location.length ">
+    <div v-if="!loading && weatherData.length && !disabled  ">
       <h1>{{ city }}:</h1>
       <h2>{{ title }}</h2>
       <ul>
